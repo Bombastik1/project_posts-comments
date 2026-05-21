@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вхід</title>
+    <link rel="stylesheet" href="/public/css/auth.css">
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; justify-content: center; min-height: 80vh;">
+        <h1>Вхід</h1>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <button type="submit">Увійти</button>
+        </form>
+        <p id="message"></p>
+        <p><a href="/public/register.html">Ще не зареєстровані? Створіть акаунт</a></p>
+    </div>
+    
+    <script src="/public/js/login.js"></script>
+</body>
+</html>

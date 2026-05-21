@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мій Блог</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+<body>
+    <h1>Стрічка публікацій</h1>
+    
+    <div class="nav">
+        <div>
+            <span id="authMenu">
+                <a href="/public/login.html">Увійти</a> | <a href="/public/register.html">Реєстрація</a>
+            </span>
+            <span id="userMenu" style="display: none;">
+                <a href="/public/create.html">Додати новий post</a>
+            </span>
+        </div>
+        <span id="userInfo" style="display: none; font-weight: bold; color: #555; margin-right: 15px;"></span>
+        <button id="logoutBtn" style="display: none;">Вийти</button>
+    </div>
+
+    <div id="postsList">Завантаження публікацій...</div>
+
+    <script src="/public/js/index.js"></script>
+</body>
+</html>

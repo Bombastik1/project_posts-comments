@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Створити пост</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+<body>
+    <div class="create-container">
+        <div class="create-card">
+            <h1>Додати нову публікацію</h1>
+            <form id="createForm">
+                <input type="text" id="title" placeholder="Заголовок поста (мін. 3 символи)" required>
+                <textarea id="content" placeholder="Вміст публікації (мін. 10 символів)" required></textarea>
+                <input type="text" id="tags" placeholder="Теги (через кому, наприклад: nodejs, mvc)">
+                <button type="submit">Опублікувати</button>
+            </form>
+            <p id="message"></p>
+            <a href="/public/index.html" class="back-link">← Назад до стрічки</a>
+        </div>
+    </div>
+
+    <script src="/public/js/create.js"></script>
+</body>
+</html>
