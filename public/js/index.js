@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:3000';
+const API_URL = 'https://project-posts-comments.onrender.com';
 let currentUser = null;
 
 // Перевірка стану автентифікації користувача та налаштування меню навігації

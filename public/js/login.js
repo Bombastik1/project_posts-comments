@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:3000';
+const API_URL = 'https://project-posts-comments.onrender.com';
 
 // Обробник події відправки форми авторизації
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
