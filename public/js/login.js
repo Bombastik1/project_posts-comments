@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         }
         
         // Перенаправлення на головну сторінку у разі успішної авторизації
-        window.location.href = '/public/index.html';
+        window.location.href = 'index.html';
     } catch (error) {
         document.getElementById('message').textContent = 'Помилка з\'єднання з сервером';
     }

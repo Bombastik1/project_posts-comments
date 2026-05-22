@@ -5,10 +5,10 @@ async function checkAccess() {
     try {
         const response = await fetch(`${API_URL}/api/auth/me`, { credentials: 'include' });
         if (!response.ok) {
-            window.location.href = '/public/login.html';
+            window.location.href = 'login.html';
         }
     } catch (err) {
-        window.location.href = '/public/login.html';
+        window.location.href = 'login.html';
     }
 }
 
@@ -56,7 +56,7 @@ document.getElementById('createForm').addEventListener('submit', async (e) => {
         
         messageEl.style.color = 'green';
         messageEl.textContent = 'Публікацію успішно додано! Повернення до стрічки...';
-        setTimeout(() => window.location.href = '/public/index.html', 1000);
+        setTimeout(() => window.location.href = 'index.html', 1000);
     } catch (error) {
         messageEl.textContent = 'Помилка з\'єднання з сервером';
     }

@@ -51,7 +51,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
         messageEl.textContent = 'Реєстрація успішна! Перенаправлення...';
         
         // Автоматичний редірект на головну сторінку після успішної операції
-        setTimeout(() => window.location.href = '/public/index.html', 1000);
+        setTimeout(() => window.location.href = 'index.html', 1000);
     } catch (error) {
         messageEl.textContent = 'Помилка з\'єднання з сервером';
     }
