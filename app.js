@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
+const helmet = require('helmet');
 require('dotenv').config();
 const connectDB = require('./config/database');
 
@@ -8,6 +9,9 @@ const errorHandler = require('./middlewares/errorHandler');
 const ApiError = require('./errors/ApiError');
 
 const app = express();
+
+// Підключаємо Helmet для захисту HTTP-заголовків
+app.use(helmet());
 
 const authRoutes = require('./routes/authRoutes');
 
@@ -19,6 +23,10 @@ app.use(cors({
     // Дозволяємо запити з адреси клієнта, зазначеної в .env, або за замовчуванням з localhost:5500
     origin: process.env.CLIENT_URL || 'http://localhost:5500',
     credentials: true // Дозволяє обмін куками (наприклад, токенами авторизації) між сервером та клієнтом
+}));
+
+app.use(helmet({
+    contentSecurityPolicy: false // Вимикаємо CSP, щоб fetch-запити з GitHub Pages продовжували працювати
 }));
 
 // Мідлвари для парсингу вхідних даних запиту
