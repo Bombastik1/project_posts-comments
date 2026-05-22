@@ -10,9 +10,6 @@ const ApiError = require('./errors/ApiError');
 
 const app = express();
 
-// Підключаємо Helmet для захисту HTTP-заголовків
-app.use(helmet());
-
 const authRoutes = require('./routes/authRoutes');
 
 // Ініціалізація підключення до бази даних MongoDB
