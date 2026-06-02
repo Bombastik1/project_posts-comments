@@ -88,3 +88,24 @@ p a:hover {
     text-decoration: underline;
     color: #3730a3;
 }
+
+/* Інтерактивне підсвічування станів валідації (ЛР №16) */
+input.error {
+    border-color: #ef4444 !important;
+    background-color: #fef2f2 !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+}
+
+input.valid {
+    border-color: #10b981 !important;
+    background-color: #f0fdf4 !important;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1) !important;
+}
+
+/* Стилізація заблокованої кнопки Submit */
+button:disabled {
+    background: #94a3b8 !important;
+    cursor: not-allowed !important;
+    opacity: 0.6 !important;
+    box-shadow: none !important;
+}
